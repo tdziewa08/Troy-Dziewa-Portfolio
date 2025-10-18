@@ -1,3 +1,7 @@
+import ProjectCard from "./ProjectCard.jsx"
+
+import gitImgWhite from "/src/assets/github-mark-white.png"
+
 import vgb1 from "/src/assets/sites/vg-bracket1.png"
 import vgb2 from "/src/assets/sites/vg-bracket2.png"
 import vgb3 from "/src/assets/sites/vg-bracket3.png"
@@ -7,38 +11,45 @@ import vgb3 from "/src/assets/sites/vg-bracket3.png"
 import wb1 from "/src/assets/sites/the-wisenbergs1.png"
 import wb2 from "/src/assets/sites/the-wisenbergs2.png"
 import wb3 from "/src/assets/sites/the-wisenbergs3.png"
-import wb4 from "/src/assets/sites/the-wisenbergs4.png"
+
+import qz1 from "/src/assets/sites/quizzical1.png"
+import qz2 from "/src/assets/sites/quizzical2.png"
 
 export default function Projects() {
     return (
-        <>
-            <div>Projects</div>
-            <div className="project-showcase">
-                <div className="vg-img-container">
-                    <img src={vgb1} />
-                </div>
-                <div className="vg-img-container">
-                    <img src={vgb2} />
-                </div>
-                <div className="vg-img-container">
-                    <img src={vgb3} />
-                </div>
-            </div>
-            <div className="project-showcase">
-                <div className="vg-img-container">
-                    <img src={wb1} />
-                </div>
-                <div className="vg-img-container">
-                    <img src={wb2} />
-                </div>
-                <div className="vg-img-container">
-                    <img src={wb3} />
-                </div>
-                <div className="vg-img-container">
-                    <img src={wb4} />
-                </div>
-            </div>
-        </>
+        <div id="projects" className="projects-container">
+            <h2>Projects</h2>
+            <ProjectCard
+                title={"Video Game Bracket"}
+                desc={"Determine the winner of a video game bracket"}
+                siteLink={"https://video-game-bracket.netlify.app/"}
+                gitLink={"https://github.com/tdziewa08/Video-Game-Bracket"}
+                gitImgWhite={gitImgWhite}
+                img1={vgb2}
+                img2={vgb3}
+                technology={["React", "API Integration", "State Management", "Responsive Design"]}
+            />
+            <ProjectCard
+                title={"The Wisenbergs"}
+                desc={"Website for my trivia team"}
+                siteLink={"https://the-wisenbergs.netlify.app/"}
+                gitLink={"https://github.com/tdziewa08/The-Wisenbergs-react"}
+                gitImgWhite={gitImgWhite}
+                img1={wb1}
+                img2={wb3}
+                technology={["React", "React Router", "Responsive Design"]}
+            />
+            <ProjectCard
+                title={"Quizzical"}
+                desc={"Simple, replayable trivia app"}
+                siteLink={"https://quizzical-td.netlify.app/"}
+                gitLink={"https://github.com/tdziewa08/Quizzical"}
+                gitImgWhite={gitImgWhite}
+                img1={qz1}
+                img2={qz2}
+                technology={["React", "API Integration", "State Management", "Responsive Design"]}
+            />
+        </div>
         
     )
 }

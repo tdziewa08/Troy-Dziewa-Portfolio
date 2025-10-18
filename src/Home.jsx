@@ -4,17 +4,17 @@ export default function Home() {
     return (
         <div className="home-container">
             <nav>
-                <a>Home</a>
-                <a>Projects</a>
-                <a>About</a>
-                <a>Contact</a>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <section className="profile">
+            <section id="home" className="profile">
                 <div className="profile-info">
                     <section>
                         <h1>Troy Dziewa</h1>
-                        <h2>Self-taught web developer of 3 years</h2>
-                        <p>wiuehbruigthwerig hweuirhguiwe rihwer gpwiuer ghweurgh iwehprg pwerg ipower wehrogi wiheorigohpweor hwoiehrgopw phwepr hgpwehp;o</p>
+                        <p className="title">Self-taught Web Developer</p>
+                        <p>I have been learning web development for the past 3 years, and am still actively learning today.</p>
                     </section>
                 </div>
                 <div className="profile-img-container">

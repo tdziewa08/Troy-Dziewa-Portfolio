@@ -9,8 +9,8 @@ export default function App() {
     <>
       <Home />
       <Projects />
-      {/* <About />
-      <Contact /> */}
+      <About />
+      <Contact />
     </>
   )
 }
