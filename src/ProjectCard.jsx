@@ -10,13 +10,16 @@ export default function ProjectCard(props) {
                 <p className="project-title">{props.title}</p>
                 <p className="project-desc">{props.desc}</p>
                 <div className="link-container">
-                    <a className="project-link" href={props.siteLink} target="_blank" rel="noopener noreferrer">Check it Out</a>
+                    {
+                    props.siteLink &&
+                    <a className="project-link" href={props.siteLink} target="_blank" rel="noopener noreferrer">Visit Website</a>
+                    }
                     <a className="project-git-link" href={props.gitLink} target="_blank" rel="noopener noreferrer">
-                        <img src={props.gitImgWhite} />
+                        <img src={props.gitImgWhite} /> GitHub Repo
                     </a>
                 </div>
                 <div className="features">
-                    <p>Technologies Used:</p>
+                    {/* <p>Technologies Used:</p> maybe remove for vertiocal alignment */}
                     <div className="features-grid">
                         {showcase}
                     </div>
@@ -25,9 +28,12 @@ export default function ProjectCard(props) {
             <div className="showcase-img-container">
                 <img src={props.img1} />
             </div>
+            {
+            props.img2 &&
             <div className="showcase-img-container">
                 <img src={props.img2} />
             </div>
+            }
         </div>
     )
 }

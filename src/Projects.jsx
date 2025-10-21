@@ -15,6 +15,8 @@ import wb3 from "/src/assets/sites/the-wisenbergs3.png"
 import qz1 from "/src/assets/sites/quizzical1.png"
 import qz2 from "/src/assets/sites/quizzical2.png"
 
+import gd1 from "/src/assets/sites/gold-digger1.png"
+
 export default function Projects() {
     return (
         <div id="projects" className="projects-container">
@@ -48,6 +50,14 @@ export default function Projects() {
                 img1={qz1}
                 img2={qz2}
                 technology={["React", "API Integration", "State Management", "Responsive Design"]}
+            />
+            <ProjectCard
+                title={"Gold-Digger"}
+                desc={"Gold Marketplace Tracker"}
+                gitLink={"https://github.com/tdziewa08/Gold-Digger"}
+                gitImgWhite={gitImgWhite}
+                img1={gd1}
+                technology={["Node.js", "DOM Manipulation"]}
             />
         </div>
         
