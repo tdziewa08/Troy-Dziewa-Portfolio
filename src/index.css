@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(36, 36, 36);
 }
 
 #root {
@@ -45,13 +45,13 @@ nav > a {
 .profile {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 85%;
+  justify-content: center;
+  width: 90%;
   background-color: lightgoldenrodyellow;
 }
 
 .profile-img-container {
-  width: 35%;
+  width: 25%;
 }
 
 .profile-img-container > img {
@@ -61,7 +61,7 @@ nav > a {
 
 .profile-info {
   text-align: center;
-  width: 65%;
+  width: 75%;
 }
 
 .profile-info > section > h1 {
@@ -99,8 +99,8 @@ nav > a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid magenta;
-  margin-block: 2em;
+  /* border: 1px solid magenta; */
+  margin-block: 1.5em;
   padding: 1em;
   gap: 1em;
 }
@@ -135,10 +135,10 @@ nav > a {
   align-items: center;
   justify-content: center;
   width: 50%;
-  font-weight: 400;
-  color: whitesmoke;
-  background-color: rgb(32, 32, 126);
-  border: 1px solid whitesmoke;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(7, 217, 7);
+  border: 1px solid rgb(7, 217, 7);
   border-radius: .5em;
   text-decoration: none;
   padding: 1em .5em;
@@ -152,6 +152,7 @@ nav > a {
   width: 50%;
   font-weight: 400;
   color: whitesmoke;
+  background-color: black;
   border: 1px solid whitesmoke;
   border-radius: .5em;
   padding: .5em;
@@ -182,7 +183,8 @@ nav > a {
 
 .features-grid > span {
   text-align: center;
-  background-color: rgb(108, 23, 108);
+  color: black;
+  background-color: rgb(215, 213, 213);
   border-radius: .5em;
   padding: .25em .75em;
 }
@@ -193,7 +195,6 @@ nav > a {
 
 .showcase-img-container {
   width: 35%;
-  border: 2px solid orange;
 }
 
 .showcase-img-container > img {
@@ -204,6 +205,60 @@ nav > a {
 a:hover {
   opacity: .75;
 }
+
+
+
+
+
+
+/* CONTACT */
+
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+  color: whitesmoke;
+  border: 1px solid green;
+}
+
+.contact-text {
+  width: 50%;
+}
+
+.contact-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: black;
+  border: 1px solid whitesmoke;
+  border-radius: .5em;
+  padding: .5em;
+}
+
+.contact-link > img {
+  display: block;
+  height: auto;
+  width: 35px;
+  margin-right: .5em;
+}
+
+
+
+
 
 
 
