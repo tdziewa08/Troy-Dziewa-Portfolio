@@ -2,14 +2,12 @@ import ProjectCard from "./ProjectCard.jsx"
 
 import gitImgWhite from "/src/assets/github-mark-white.png"
 
-import vgb1 from "/src/assets/sites/vg-bracket1.png"
 import vgb2 from "/src/assets/sites/vg-bracket2.png"
 import vgb3 from "/src/assets/sites/vg-bracket3.png"
 
 
 // MAYBE ONLY SAVE THE IMAGES AS, "WHATS WISIBLE", INSTEAD OF, "WHOLE PAGE"
 import wb1 from "/src/assets/sites/the-wisenbergs1.png"
-import wb2 from "/src/assets/sites/the-wisenbergs2.png"
 import wb3 from "/src/assets/sites/the-wisenbergs3.png"
 
 import qz1 from "/src/assets/sites/quizzical1.png"
@@ -21,6 +19,7 @@ export default function Projects() {
     return (
         <div id="projects" className="projects-container">
             <h2>Projects</h2>
+            <p>Here you can find the projects I am most proud of. You can view my other projects on my GitHub account.</p>
             <ProjectCard
                 title={"Video Game Bracket"}
                 desc={"Determine the winner of a video game bracket"}

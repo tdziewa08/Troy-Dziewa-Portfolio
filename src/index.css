@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    background-color: rgb(36, 36, 36);
+  background-color: #fff;
+  /* background-color: rgb(36, 36, 36); */
 }
 
 #root {
@@ -34,11 +35,11 @@ nav {
   justify-content: center;
   width: 100%;
   gap: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 nav > a {
-  color: whitesmoke;
+  color: black;
   font-size: 2rem;
 }
 
@@ -47,15 +48,18 @@ nav > a {
   align-items: center;
   justify-content: center;
   width: 90%;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
+  background-color: rgb(220, 219, 219);
 }
 
 .profile-img-container {
-  width: 25%;
+  width: 35%;
+  padding: 1.5em;
 }
 
 .profile-img-container > img {
   display: block;
+  border-radius: 100%;
   width: 100%;
 }
 
@@ -90,7 +94,7 @@ nav > a {
 }
 
 .projects-container > h2 {
-  color: whitesmoke;
+  color: black;
   font-size: 2rem;
 }
 
@@ -99,6 +103,7 @@ nav > a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-color: whitesmoke;
   /* border: 1px solid magenta; */
   margin-block: 1.5em;
   padding: 1em;
@@ -110,7 +115,7 @@ nav > a {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  color: whitesmoke;
+  color: black;
 }
 
 .project-title {
@@ -200,6 +205,7 @@ nav > a {
 .showcase-img-container > img {
   display: block;
   width: 100%;
+  border: 1px solid black;
 }
 
 a:hover {
