@@ -19,45 +19,47 @@ export default function Projects() {
     return (
         <div id="projects" className="projects-container">
             <h2>Projects</h2>
-            <p>Here you can find the projects I am most proud of. You can view my other projects on my GitHub account.</p>
-            <ProjectCard
-                title={"Video Game Bracket"}
-                desc={"Determine the winner of a video game bracket"}
-                siteLink={"https://video-game-bracket.netlify.app/"}
-                gitLink={"https://github.com/tdziewa08/Video-Game-Bracket"}
-                gitImgWhite={gitImgWhite}
-                img1={vgb2}
-                img2={vgb3}
-                technology={["React", "API Integration", "State Management", "Responsive Design"]}
-            />
-            <ProjectCard
-                title={"The Wisenbergs"}
-                desc={"Website for my trivia team"}
-                siteLink={"https://the-wisenbergs.netlify.app/"}
-                gitLink={"https://github.com/tdziewa08/The-Wisenbergs-react"}
-                gitImgWhite={gitImgWhite}
-                img1={wb1}
-                img2={wb3}
-                technology={["React", "React Router", "Responsive Design"]}
-            />
-            <ProjectCard
-                title={"Quizzical"}
-                desc={"Simple, replayable trivia app"}
-                siteLink={"https://quizzical-td.netlify.app/"}
-                gitLink={"https://github.com/tdziewa08/Quizzical"}
-                gitImgWhite={gitImgWhite}
-                img1={qz1}
-                img2={qz2}
-                technology={["React", "API Integration", "State Management", "Responsive Design"]}
-            />
-            <ProjectCard
-                title={"Gold-Digger"}
-                desc={"Gold Marketplace Tracker"}
-                gitLink={"https://github.com/tdziewa08/Gold-Digger"}
-                gitImgWhite={gitImgWhite}
-                img1={gd1}
-                technology={["Node.js", "DOM Manipulation"]}
-            />
+            <span>Here you can find the projects I am most proud of. You can view my other projects on my <a href="https://www.github.com/tdziewa08" target="blank">GitHub</a> account.</span>
+            <div className="project-cards">
+                <ProjectCard
+                    title={"Video Game Bracket"}
+                    desc={"Determine the winner of a video game bracket"}
+                    siteLink={"https://video-game-bracket.netlify.app/"}
+                    gitLink={"https://github.com/tdziewa08/Video-Game-Bracket"}
+                    gitImgWhite={gitImgWhite}
+                    img1={vgb2}
+                    img2={vgb3}
+                    technology={["React", "API Integration", "State Management", "Responsive Design"]}
+                />
+                <ProjectCard
+                    title={"The Wisenbergs"}
+                    desc={"Website for my trivia team"}
+                    siteLink={"https://the-wisenbergs.netlify.app/"}
+                    gitLink={"https://github.com/tdziewa08/The-Wisenbergs-react"}
+                    gitImgWhite={gitImgWhite}
+                    img1={wb1}
+                    img2={wb3}
+                    technology={["React", "React Router", "Responsive Design"]}
+                />
+                <ProjectCard
+                    title={"Quizzical"}
+                    desc={"Simple, replayable trivia app"}
+                    siteLink={"https://quizzical-td.netlify.app/"}
+                    gitLink={"https://github.com/tdziewa08/Quizzical"}
+                    gitImgWhite={gitImgWhite}
+                    img1={qz1}
+                    img2={qz2}
+                    technology={["React", "API Integration", "State Management", "Responsive Design"]}
+                />
+                <ProjectCard
+                    title={"Gold-Digger"}
+                    desc={"Gold Marketplace Tracker"}
+                    gitLink={"https://github.com/tdziewa08/Gold-Digger"}
+                    gitImgWhite={gitImgWhite}
+                    img1={gd1}
+                    technology={["Node.js", "DOM Manipulation"]}
+                />
+            </div>
         </div>
         
     )

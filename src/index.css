@@ -9,6 +9,8 @@ html {
 body {
   background-color: #fff;
   /* background-color: rgb(36, 36, 36); */
+  padding: 0;
+  margin: 0;
 }
 
 #root {
@@ -16,7 +18,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid blue;
 }
 
 .home-container {
@@ -24,9 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   width: 100%;
-  margin-bottom: 3em;
 }
 
 nav {
@@ -34,13 +33,19 @@ nav {
   align-self: center;
   justify-content: center;
   width: 100%;
-  gap: 2em;
+  gap: 2.5em;
+  margin-top: 1em;
   margin-bottom: 5em;
 }
 
 nav > a {
   color: black;
-  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1.75rem;
+  background-color: #3eebdc;
+  border: 2px solid black;
+  padding: .25em .75em;
+  cursor: pointer;
 }
 
 .profile {
@@ -49,6 +54,7 @@ nav > a {
   justify-content: center;
   width: 90%;
   background-color: whitesmoke;
+  margin: 2em 0;
 }
 
 .profile-img-container {
@@ -89,12 +95,15 @@ nav > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid yellow;
 }
 
 .projects-container > h2 {
   color: black;
   font-size: 2.5rem;
+}
+
+.projects-container > span {
+  font-size: 1.5rem;
 }
 
 .project-showcase {
@@ -139,7 +148,7 @@ nav > a {
   align-items: center;
   justify-content: center;
   width: 50%;
-  font-weight: 500;
+  font-weight: bold;
   color: black;
   background-color: #3eebdc;
   border: 1px solid #3eebdc;
@@ -154,7 +163,7 @@ nav > a {
   justify-content: center;
   text-decoration: none;
   width: 50%;
-  font-weight: 400;
+  font-weight: 500;
   color: whitesmoke;
   background-color: black;
   border: 1px solid whitesmoke;
@@ -219,18 +228,17 @@ a:hover {
 /* CONTACT */
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
   width: 100%;
   color: black;
   background-color: rgb(36,36,36);
-  border: 1px solid green;
+  padding: 2.5em 2em;
   gap: 1.5em;
 }
 
@@ -241,7 +249,6 @@ h3 {
   justify-content: center;
   text-align: center;
   background-color: whitesmoke;
-  border: 1px solid black;
   width: 20%;
 }
 
@@ -262,10 +269,11 @@ h3 {
   width: 75px;
 }
 
-.contact-card-desc {
+.contact-card-name {
   width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
+  /* background-color: rgb(75, 227, 75); */
   border-top: 2px solid black;
   margin-bottom: 0;
   padding-block: .5em;
@@ -304,3 +312,193 @@ h3 {
 }
 
 */
+
+/* Media Queries for larger screens */
+
+/* 1080p screens (1920x1080) - Scale up by ~1.5x */
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  nav {
+    gap: 3.75em;
+    margin-bottom: 7.5em;
+  }
+  
+  nav > a {
+    font-size: 2.6rem;
+    padding: .375em 1.125em;
+  }
+  
+  .profile {
+    width: 85%;
+    margin: 3em 0;
+  }
+  
+  .profile-img-container {
+    padding: 2.25em;
+  }
+  
+  .profile-info > section > h1 {
+    font-size: 4.5rem;
+  }
+  
+  .profile-info > section > .title {
+    font-size: 3rem;
+  }
+  
+  .profile-info > section > p {
+    font-size: 2.25rem;
+    padding: .75em;
+  }
+  
+  .projects-container > h2 {
+    font-size: 3.75rem;
+  }
+  
+  .projects-container > span {
+    font-size: 2.25rem;
+  }
+  
+  .project-showcase {
+    margin-block: 2.25em;
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+  
+  .project-title {
+    font-size: 2.25rem;
+  }
+  
+  .project-link,
+  .project-git-link {
+    padding: 1.5em .75em;
+  }
+  
+  .project-git-link {
+    padding: .75em;
+  }
+  
+  .project-git-link > img {
+    width: 52.5px;
+  }
+  
+  h3 {
+    font-size: 3.75rem;
+  }
+  
+  .contact-container {
+    padding: 3.75em 3em;
+    gap: 2.25em;
+  }
+  
+  .icon-container > svg {
+    height: 112.5px;
+    width: 112.5px;
+    margin-top: 3em;
+  }
+  
+  .contact-card-name {
+    font-size: 2.25rem;
+    padding-block: .75em;
+  }
+}
+
+/* 1440p screens (2560x1440) - Scale up by ~2x */
+@media screen and (min-width: 1921px) {
+  nav {
+    gap: 5em;
+    margin-bottom: 10em;
+  }
+  
+  nav > a {
+    font-size: 3.5rem;
+    padding: .5em 1.5em;
+  }
+  
+  .profile {
+    width: 80%;
+    margin: 4em 0;
+  }
+  
+  .profile-img-container {
+    padding: 3em;
+  }
+  
+  .profile-info > section > h1 {
+    font-size: 6rem;
+  }
+  
+  .profile-info > section > .title {
+    font-size: 4rem;
+  }
+  
+  .profile-info > section > p {
+    font-size: 3rem;
+    padding: 1em;
+  }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .projects-container > h2 {
+    font-size: 5rem;
+  }
+  
+  .projects-container > span {
+    font-size: 3rem;
+  }
+  
+  .project-showcase {
+    flex-direction: column;
+    margin-block: 3em;
+    padding: 2em;
+    gap: 2em;
+  }
+  
+  .project-title {
+    font-size: 3rem;
+  }
+  
+  .project-link,
+  .project-git-link {
+    padding: 2em 1em;
+  }
+  
+  .project-git-link {
+    padding: 1em;
+  }
+  
+  .project-git-link > img {
+    width: 70px;
+  }
+  
+  .features-grid {
+    gap: 1em;
+    margin-block: 2em;
+  }
+  
+  .features-grid > span {
+    padding: .5em 1.5em;
+  }
+  
+  h3 {
+    font-size: 5rem;
+  }
+  
+  .contact-container {
+    padding: 5em 4em;
+    gap: 3em;
+  }
+  
+  .icon-container > svg {
+    height: 150px;
+    width: 150px;
+    margin-top: 4em;
+  }
+  
+  .contact-card-name {
+    font-size: 3rem;
+    padding-block: 1em;
+  }
+}

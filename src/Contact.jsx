@@ -4,43 +4,33 @@ import { GrMailOption } from "react-icons/gr"
 import { GrDocument } from "react-icons/gr"
 import { GrCertificate } from "react-icons/gr"
 
+import ContactLink from "./ContactLink.jsx"
+
 export default function Contact(props) {
     return (
         <>
-            <h3>Contact Me</h3>
+            <h3>Contact Me / Links</h3>
             <div id="contact" className="contact-container">
-                <div className="contact-card">
-                    <a href="mailto:tdziewa08@gmail.com" className="icon-container">
-                        <GrMailOption />
-                    </a>
-                    <p className="contact-card-desc">
-                        Email
-                    </p>
-                </div>
-                <div className="contact-card">
-                    <a href={resume} target="_blank" rel="noopener noreferrer" className="icon-container">
-                        <GrDocument />
-                    </a>
-                    <p className="contact-card-desc">
-                        Resume
-                    </p>
-                </div>
-                <div className="contact-card">
-                    <a href="https://scrimba.com/certificate-cert2uNjfKA1Joq9N9TD2SnRb9cJy8WBVtzVfwN" target="_blank" rel="noopener noreferrer" className="icon-container">
-                        <GrCertificate />
-                    </a>
-                    <p className="contact-card-desc">
-                        Course Certificate
-                    </p>
-                </div>
-                <div className="contact-card">
-                    <a href="https://github.com/tdziewa08/" target="_blank" rel="noopener noreferrer" className="icon-container">
-                        <FaGithub />
-                    </a>
-                    <p className="contact-card-desc">
-                        GitHub Profile
-                    </p>
-                </div>
+                <ContactLink
+                    img={<GrMailOption />}
+                    name="Email"
+                    path="mailto:tdziewa08@gmail.com"
+                />
+                <ContactLink
+                    img={<GrDocument />}
+                    name="Resume"
+                    path={resume}
+                />
+                <ContactLink
+                    img={<GrCertificate />}
+                    name="Course Certificate"
+                    path={"https://scrimba.com/certificate-cert2uNjfKA1Joq9N9TD2SnRb9cJy8WBVtzVfwN"}
+                />
+                <ContactLink
+                    img={<FaGithub />}
+                    name="GitHub Profile"
+                    path={"https://github.com/tdziewa08/"}
+                />
             </div>
         </>
     )
