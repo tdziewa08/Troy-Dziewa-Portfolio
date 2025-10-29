@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  font-family: "Lora", serif;
   background-color: #fff;
   /* background-color: rgb(36, 36, 36); */
   padding: 0;
@@ -42,8 +43,9 @@ nav > a {
   color: black;
   text-decoration: none;
   font-size: 1.75rem;
-  background-color: #3eebdc;
+  background-color: whitesmoke;
   border: 2px solid black;
+  border-radius: .5em;
   padding: .25em .75em;
   cursor: pointer;
 }
@@ -166,7 +168,7 @@ nav > a {
   font-weight: 500;
   color: whitesmoke;
   background-color: black;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
   border-radius: .5em;
   padding: .5em;
 }
@@ -195,14 +197,16 @@ nav > a {
 }
 
 .features-grid > span {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   background-color: rgb(215, 213, 213);
   border-radius: .5em;
   padding: .25em .75em;
 }
 
-.project-showcase > .project-card > .project-title {
+.project-title {
   font-size: 1.5rem;
 }
 
@@ -354,7 +358,7 @@ h3 {
   }
   
   .projects-container > span {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   
   .project-showcase {
@@ -364,11 +368,12 @@ h3 {
   }
   
   .project-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   
   .project-link,
   .project-git-link {
+    font-size: 1.25rem;
     padding: 1.5em .75em;
   }
   
@@ -377,7 +382,7 @@ h3 {
   }
   
   .project-git-link > img {
-    width: 52.5px;
+    width: 58px;
   }
   
   h3 {
@@ -409,12 +414,12 @@ h3 {
   }
   
   nav > a {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     padding: .5em 1.5em;
   }
   
   .profile {
-    width: 80%;
+    width: 70%;
     margin: 4em 0;
   }
   
@@ -423,30 +428,39 @@ h3 {
   }
   
   .profile-info > section > h1 {
-    font-size: 6rem;
-  }
-  
-  .profile-info > section > .title {
     font-size: 4rem;
   }
   
-  .profile-info > section > p {
+  .profile-info > section > .title {
     font-size: 3rem;
+  }
+  
+  .profile-info > section > p {
+    font-size: 2rem;
     padding: 1em;
   }
 
   .project-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1.5em;
+    column-gap: 1.5em;
+  }
+
+  .project-cards > :nth-child(4) {
+    justify-content: flex-start;
+  }
+
+  .project-card {
+    width: 100%;
   }
   
   .projects-container > h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
   .projects-container > span {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .project-showcase {
@@ -456,21 +470,27 @@ h3 {
     gap: 2em;
   }
   
-  .project-title {
-    font-size: 3rem;
+  .project-showcase > .project-card > .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-desc {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .project-link {
+    font-size: 1.5rem;
+    padding: 1.4em 0;
   }
   
-  .project-link,
   .project-git-link {
-    padding: 2em 1em;
-  }
-  
-  .project-git-link {
+    font-size: 1.5rem;
     padding: 1em;
   }
   
   .project-git-link > img {
-    width: 70px;
+    width: 50px;
   }
   
   .features-grid {
@@ -479,26 +499,30 @@ h3 {
   }
   
   .features-grid > span {
-    padding: .5em 1.5em;
+    font-size: 1.25rem;
+    padding: .75em 1.5em;
+  }
+
+  .showcase-img-container {
+    width: 100%;
   }
   
   h3 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
   .contact-container {
-    padding: 5em 4em;
+    padding: 4em 3em;
     gap: 3em;
   }
   
   .icon-container > svg {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     margin-top: 4em;
   }
   
   .contact-card-name {
     font-size: 3rem;
-    padding-block: 1em;
   }
 }
