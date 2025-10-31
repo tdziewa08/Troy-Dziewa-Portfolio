@@ -1,6 +1,6 @@
 export default function ProjectCard(props) {
 
-    const showcase = props.technology.map(item => {
+    const featuredSkills = props.technology.map(item => {
         return <span>{item}</span>
     })
 
@@ -19,9 +19,8 @@ export default function ProjectCard(props) {
                     </a>
                 </div>
                 <div className="features">
-                    {/* <p>Technologies Used:</p> maybe remove for vertiocal alignment */}
                     <div className="features-grid">
-                        {showcase}
+                        {featuredSkills}
                     </div>
                 </div>
             </aside>

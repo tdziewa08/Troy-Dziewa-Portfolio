@@ -6,7 +6,7 @@ import { GrCertificate } from "react-icons/gr"
 
 import ContactLink from "./ContactLink.jsx"
 
-export default function Contact(props) {
+export default function Contact() {
     return (
         <>
             <h3>Contact Me / Links</h3>

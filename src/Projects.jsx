@@ -1,19 +1,14 @@
-import ProjectCard from "./ProjectCard.jsx"
+import vgb2 from "/src/assets/sites/vg-bracket2.png"
+import vgb3 from "/src/assets/sites/vg-bracket3.png"
+import wb1 from "/src/assets/sites/the-wisenbergs1.png"
+import wb3 from "/src/assets/sites/the-wisenbergs3.png"
+import qz1 from "/src/assets/sites/quizzical1.png"
+import qz2 from "/src/assets/sites/quizzical2.png"
+import gd1 from "/src/assets/sites/gold-digger1.png"
 
 import gitImgWhite from "/src/assets/github-mark-white.png"
 
-import vgb2 from "/src/assets/sites/vg-bracket2.png"
-import vgb3 from "/src/assets/sites/vg-bracket3.png"
-
-
-// MAYBE ONLY SAVE THE IMAGES AS, "WHATS WISIBLE", INSTEAD OF, "WHOLE PAGE"
-import wb1 from "/src/assets/sites/the-wisenbergs1.png"
-import wb3 from "/src/assets/sites/the-wisenbergs3.png"
-
-import qz1 from "/src/assets/sites/quizzical1.png"
-import qz2 from "/src/assets/sites/quizzical2.png"
-
-import gd1 from "/src/assets/sites/gold-digger1.png"
+import ProjectCard from "./ProjectCard.jsx"
 
 export default function Projects() {
     return (
@@ -57,7 +52,7 @@ export default function Projects() {
                     gitLink={"https://github.com/tdziewa08/Gold-Digger"}
                     gitImgWhite={gitImgWhite}
                     img1={gd1}
-                    technology={["Node.js", "DOM Manipulation"]}
+                    technology={["Node.js", "Node:Path Module", "Asynchronous JS", "DOM Manipulation"]}
                 />
             </div>
         </div>

@@ -9,7 +9,6 @@ html {
 body {
   font-family: "Lora", serif;
   background-color: #fff;
-  /* background-color: rgb(36, 36, 36); */
   padding: 0;
   margin: 0;
 }
@@ -35,8 +34,8 @@ nav {
   justify-content: center;
   width: 100%;
   gap: 2.5em;
-  margin-top: 1em;
-  margin-bottom: 5em;
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 nav > a {
@@ -49,6 +48,14 @@ nav > a {
   padding: .25em .75em;
   cursor: pointer;
 }
+
+a:hover {
+  opacity: .60;
+}
+
+
+
+/*About Styling*/
 
 .profile {
   display: flex;
@@ -87,11 +94,12 @@ nav > a {
 
 .profile-info > section > p {
   font-size: 1.5rem;
-  padding: .5em;
+  padding: .75em;
 }
 
 
 
+/*Projects Styling*/
 
 .projects-container {
   display: flex;
@@ -114,7 +122,6 @@ nav > a {
   justify-content: center;
   width: 100%;
   background-color: whitesmoke;
-  /* border: 1px solid magenta; */
   margin-block: 1.5em;
   padding: 1em;
   gap: 1em;
@@ -129,6 +136,7 @@ nav > a {
 }
 
 .project-title {
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: .5em;
 }
@@ -200,14 +208,12 @@ nav > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  hyphens: auto; /* Add hyphenation for long words */
+  overflow-wrap: break-word; /* Break long words */
   color: black;
   background-color: rgb(215, 213, 213);
   border-radius: .5em;
   padding: .25em .75em;
-}
-
-.project-title {
-  font-size: 1.5rem;
 }
 
 .showcase-img-container {
@@ -220,16 +226,9 @@ nav > a {
   border: 1px solid black;
 }
 
-a:hover {
-  opacity: .75;
-}
 
 
-
-
-
-
-/* CONTACT */
+/*Contact Styling*/
 
 h3 {
   font-size: 2.5rem;
@@ -277,7 +276,6 @@ h3 {
   width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
-  /* background-color: rgb(75, 227, 75); */
   border-top: 2px solid black;
   margin-bottom: 0;
   padding-block: .5em;
@@ -285,39 +283,161 @@ h3 {
 
 
 
+/*Media Queries*/
 
-
-
-
-
-
-
-
-/*Potential somewhere else 
-
-
-.profile-info > article {
-  display: flex;
-  align-items: center;
-  background-color: lightgoldenrodyellow;
-  border: 2px solid black;
-  border-radius: .5em;
-  padding: 1em;
-  margin-block: .75em .25em;
+/* Mobile smartphones (up to 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 0 1em;
+  }
+  
+  nav > a {
+    font-size: 1.5rem;
+    padding: .5em 1em;
+    text-align: center;
+  }
+  
+  .profile {
+    flex-direction: column;
+    width: 95%;
+    margin: 1em 0;
+    padding: 1em;
+  }
+  
+  .profile-img-container {
+    width: 50%;
+    padding: 1em;
+    order: -1; /* Move image above text */
+  }
+  
+  .profile-info {
+    width: 100%;
+    margin-top: .5em;
+  }
+  
+  .profile-info > section > h1 {
+    font-size: 2.5rem;
+  }
+  
+  .profile-info > section > .title {
+    font-size: 1.5rem;
+  }
+  
+  .profile-info > section > p {
+    font-size: 1.25rem;
+    padding: .5em;
+  }
+  
+  .projects-container > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .projects-container > span {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 95%;
+    padding: 0 1em;
+  }
+  
+  .project-showcase {
+    flex-direction: column;
+    width: 100%;
+    margin-block: 1em;
+    padding: 1em;
+    gap: 1em;
+  }
+  
+  .project-card {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .project-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+  }
+  
+  .link-container {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+  
+  .project-link,
+  .project-git-link {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.1rem;
+  }
+  
+  .project-git-link > img {
+    width: 25px;
+    margin-right: .5em;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: .75em;
+    margin-block: 1.5em;
+  }
+  
+  .features-grid > span {
+    padding: .5em 1em;
+    font-size: 1rem;
+  }
+  
+  .showcase-img-container {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    padding: 2em 1em;
+    gap: 2em;
+  }
+  
+  .contact-card {
+    width: 80%;
+    padding: 1em;
+  }
+  
+  .icon-container > svg {
+    height: 60px;
+    width: 60px;
+    margin-top: 1em;
+  }
+  
+  .contact-card-name {
+    font-size: 1.25rem;
+    padding-block: .5em;
+  }
 }
-
-.small-profile-img-container {
-  height: 75px;
-  width: 75px;
-}
-
-.small-profile-img-container > img {
-  width: 100%;
-}
-
-*/
-
-/* Media Queries for larger screens */
 
 /* 1080p screens (1920x1080) - Scale up by ~1.5x */
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -410,7 +530,8 @@ h3 {
 @media screen and (min-width: 1921px) {
   nav {
     gap: 5em;
-    margin-bottom: 10em;
+    margin-top: 3em;
+    margin-bottom: 7em;
   }
   
   nav > a {
