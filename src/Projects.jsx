@@ -1,5 +1,7 @@
 import vgb2 from "/src/assets/sites/vg-bracket2.png"
 import vgb3 from "/src/assets/sites/vg-bracket3.png"
+import rf1 from "/src/assets/sites/recipe-finder1.png"
+import rf2 from "/src/assets/sites/recipe-finder2.png"
 import wb1 from "/src/assets/sites/the-wisenbergs1.png"
 import wb3 from "/src/assets/sites/the-wisenbergs3.png"
 import qz1 from "/src/assets/sites/quizzical1.png"
@@ -25,6 +27,16 @@ export default function Projects() {
                     img1={vgb2}
                     img2={vgb3}
                     technology={["React", "API Integration", "State Management", "Responsive Design"]}
+                />
+                <ProjectCard
+                    title={"Recipe Finder"}
+                    desc={"AI Simulated, recipe finding app"}
+                    siteLink={"https://recipe-finder-td.netlify.app/"}
+                    gitLink={"https://github.com/tdziewa08/Recipe-Finder"}
+                    gitImgWhite={gitImgWhite}
+                    img1={rf1}
+                    img2={rf2}
+                    technology={["React", "React Router", "Data Structures", "Responsive Design"]}
                 />
                 <ProjectCard
                     title={"The Wisenbergs"}
