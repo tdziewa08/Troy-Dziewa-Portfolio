@@ -30,7 +30,7 @@ export default function Projects() {
                 />
                 <ProjectCard
                     title={"Recipe Finder"}
-                    desc={"AI Simulated, recipe finding app"}
+                    desc={"Recipe finder app with smart substitutions"}
                     siteLink={"https://recipe-finder-td.netlify.app/"}
                     gitLink={"https://github.com/tdziewa08/Recipe-Finder"}
                     gitImgWhite={gitImgWhite}
