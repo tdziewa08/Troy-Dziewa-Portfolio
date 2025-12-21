@@ -27,6 +27,9 @@ export default function ProjectCard(props) {
             <div className="showcase-img-container">
                 <img src={props.img1} />
             </div>
+            <aside className="dev-notes">
+                {props.testimonial}
+            </aside>
             {
             props.img2 &&
             <div className="showcase-img-container">
