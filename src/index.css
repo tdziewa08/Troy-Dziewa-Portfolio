@@ -125,7 +125,8 @@ a:hover {
   justify-content: center;
   width: 75%;
   background-color: whitesmoke;
-  margin: 2em auto;
+  margin: 5em auto;
+  padding: 1em;
   gap: 1.5em;
 }
 
@@ -156,7 +157,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid magenta;
   gap: 1em;
 }
 
@@ -193,7 +193,7 @@ a:hover {
   height: auto;
   width: 35px;
   margin-right: .5em;
-  padding: .125em;
+  padding: .25em;
 }
 
 .features {
@@ -225,7 +225,6 @@ a:hover {
 }
 
 .dev-notes {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-self: center;
@@ -373,6 +372,7 @@ h3 {
   }
   
   .project-showcase {
+    display: flex;
     flex-direction: column;
     width: 100%;
     margin-block: 1em;
@@ -403,14 +403,14 @@ h3 {
   
   .project-link,
   .project-git-link {
+    height: 50px;
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     font-size: 1.1rem;
   }
   
   .project-git-link > img {
-    width: 25px;
-    margin-right: .5em;
+    width: 35px;
   }
   
   .features-grid {
@@ -427,7 +427,6 @@ h3 {
   
   .showcase-img-container {
     width: 100%;
-    margin-bottom: 1em;
   }
   
   h3 {
@@ -502,7 +501,6 @@ h3 {
   }
   
   .project-showcase {
-    margin-block: 2.25em;
     padding: 1.5em;
     gap: 1.5em;
   }
@@ -555,7 +553,7 @@ h3 {
   }
   
   .profile {
-    width: 70%;
+    width: 80%;
     margin: 4em 0;
   }
   
@@ -577,14 +575,8 @@ h3 {
   }
 
   .project-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     padding: 0 1.5em;
     column-gap: 1.5em;
-  }
-
-  .project-cards > :nth-child(4) {
-    justify-content: flex-start;
   }
 
   .project-card {
@@ -600,8 +592,6 @@ h3 {
   }
   
   .project-showcase {
-    flex-direction: column;
-    margin-block: 3em;
     padding: 2em;
     gap: 2em;
   }
@@ -615,16 +605,10 @@ h3 {
     text-align: center;
   }
 
-  .project-link {
-    font-size: 1.5rem;
-    padding: 1.4em 0;
+  .link-container {
+    font-size: 1.25rem;
   }
-  
-  .project-git-link {
-    font-size: 1.5rem;
-    padding: 1em;
-  }
-  
+
   .project-git-link > img {
     width: 50px;
   }
@@ -639,8 +623,8 @@ h3 {
     padding: .75em 1.5em;
   }
 
-  .showcase-img-container {
-    width: 100%;
+  .dev-notes {
+    font-size: 1.25rem;
   }
   
   h3 {
