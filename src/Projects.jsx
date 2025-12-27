@@ -1,3 +1,4 @@
+import { developerNotes } from "/src/assets/developerNotes.js"
 import vgb2 from "/src/assets/sites/vg-bracket2.png"
 import vgb3 from "/src/assets/sites/vg-bracket3.png"
 import rf1 from "/src/assets/sites/recipe-finder1.png"
@@ -27,6 +28,7 @@ export default function Projects() {
                     img1={vgb2}
                     img2={vgb3}
                     technology={["React", "API Integration", "State Management", "Responsive Design"]}
+                    testimonial={developerNotes["video-game-bracket"]}
                 />
                 <ProjectCard
                     title={"Recipe Finder"}
@@ -37,6 +39,7 @@ export default function Projects() {
                     img1={rf1}
                     img2={rf2}
                     technology={["React", "React Router", "Data Structures", "Responsive Design"]}
+                    testimonial={developerNotes["recipe-finder"]}
                 />
                 <ProjectCard
                     title={"The Wisenbergs"}
@@ -47,6 +50,7 @@ export default function Projects() {
                     img1={wb1}
                     img2={wb3}
                     technology={["React", "React Router", "Responsive Design"]}
+                    testimonial={developerNotes["the-wisenbergs"]}
                 />
                 <ProjectCard
                     title={"Quizzical"}
@@ -57,6 +61,7 @@ export default function Projects() {
                     img1={qz1}
                     img2={qz2}
                     technology={["React", "API Integration", "State Management", "Responsive Design"]}
+                    testimonial={developerNotes["quizzical"]}
                 />
                 <ProjectCard
                     title={"Gold-Digger"}
@@ -65,9 +70,9 @@ export default function Projects() {
                     gitImgWhite={gitImgWhite}
                     img1={gd1}
                     technology={["Node.js", "Node:Path Module", "Asynchronous JS", "DOM Manipulation"]}
+                    testimonial={developerNotes["gold-digger"]}
                 />
             </div>
         </div>
-        
     )
 }
